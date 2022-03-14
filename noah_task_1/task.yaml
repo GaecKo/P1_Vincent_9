@@ -1,0 +1,71 @@
+accessible: true
+author: noah_cordier
+categories: []
+contact_url: ''
+context: ''
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        time: '30'
+        hard_time: ''
+        memory: '100'
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: L'assistant de Fibonacci
+network_grading: false
+problems:
+    q1:
+        type: code
+        name: Soit le plus efficace !
+        header: |4+
+
+            Aide le célèbre mathématicien Fibonacci dans ses expérimentations !
+            Pour ses nouvelles recherches il a besoin de pouvoir créer des listes assez spéciales,
+            il ne sait pas encore quelles informations il pourra en sortir mais il sait que les faires à la main est long et fastidieux.
+            Fibonacci est un homme perfectionniste et à la recherche de l'efficacité,
+            il ne veut pas une solution mais la solution la plus courte,
+            efficace et optimisée pour résoudre son problème. Seras tu à la hauteur de ses attentes ?
+
+
+            Ecrivez le corps de la fonction 'extreme_list' qui réalise une liste composée
+            des extremes alternés jusqu'à la moitié de la valeur entrée.
+
+            Par exemple si la valeure d'entrée est 5, la liste retournée par la fonction est
+            [0,5,1,4,2,3], si la valeur d'entrée vaut 8, la liste retournée est [0,8,1,7,2,6,3,5,4].
+
+            Dans un premier temps, votre fonction sera exécutée avec des valeurs d'entrées aléatoires,
+            ne plus avoir la même erreur ne signifie pas nécessairement
+            que vous avez solutionné le problème. Votre réponse sera comparée avec la réponse attendue,
+            en cas de mauvaises réponses vous pourrez comparer les deux.
+
+            Dans un second temps, la durée d'exécution l'algorithme sera évalué. Trouvez une solution rapide pour obtenir
+            un résultat de 100%, là aussi votre temps d'exécution sera comparé avec celui du code du secrétaire de Fibonnaci,
+            pour mériter votre place à ses côtés, montrez-vous meilleur programmeur !
+            (Astuce, si la différence de temps d'exécution est très courte, retentez directement votre chance.)
+            (Si INGInious n'a pas le temps d'exécuter votre solution, ça n'est pas un bug, c'est que vous solution n'est pas bonne.)
+
+            .. code-block:: python
+
+                def extreme_list(n):
+                """
+                @pre: 'n' est un nombre entier strictement positif
+
+                @post: retourne une liste allant de 0 à la moitié de 'n' en alternant les extrèmes de 'n'.
+                Exemple, si 'n' vaut 5, la liste retournée vaut [0,5,1,4,2,3]
+                """
+
+
+
+
+
+        language: python
+        default: '#A implémenter'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

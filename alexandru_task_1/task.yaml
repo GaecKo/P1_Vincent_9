@@ -1,0 +1,53 @@
+accessible: true
+author: Doroiman Alexandru
+categories: []
+contact_url: mailto:alexandru.doroiman@student.uclouvain.be
+context: ''
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        time: '30'
+        hard_time: ''
+        memory: '100'
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Lost Coordinates
+network_grading: false
+problems:
+    Q1:
+        type: code
+        name: '''In a galaxy far, far away'''
+        header: "A cause d'un problème informatique, les serveurs de la NASA qui contenaient
+            **des listes avec des coordonnées géographiques** ont planté et pour toute
+            sécurité, les éléments de la liste ont été hachés pour que les hackers
+            n'aient pas accès. Certains **chiffres** ont été remplacés par des **lettres**
+            ou des **caractères spéciaux**, chacun des éléments de la liste étant
+            transformés à leur tour en une chaine de caractères.\n\nLa NASA vous demande
+            donc de ne récupérer **QUE** les nombres se trouvant dans la liste et
+            faire la **moyenne** de ces nombres pour savoir combien d'années lumière
+            sépare la Terre d'une des galaxies.\n\n\n\n\n\U0001F680 **TACHE:** \U0001F52D\n\nEcrivez
+            le corps de la fonction 'moyenne' qui calcule la moyenne de **TOUS** les
+            nombres se trouvant dans la liste.\n\nPar exemple, la liste **['1tù0',
+            '2.32', '5=;hs1', 'Za', '4ha8', '-1lj(\"(0', '2-ç!è3']** doit retourner
+            **53**.\n\nLa chaine de caractères **'4ha8'** deviendra le nombre **48**,
+            la chaine de caractères **'2.32'** deviendra le nombre **232** et la chaine
+            de caractères **'2-ç!è3'** deviendra le nombre **23**.\n\nLes nombres
+            négatifs devront être **positifs**.\n\n\n\n.. code-block:: python\n\n
+            \   def moyenne(li):\n        \"\"\"\n        @pre: 'li' est une liste
+            contenant des nombres entiers ou réels,\n        des mots, voire des caractères
+            spéciaux, chaque élément de\n        la liste étant transformé en une
+            chaine de caractères\n\n        @post : retourne la moyenne de chaque
+            élément de la liste 'li'\n        en fonction de la taille de celle-ci,
+            retourne False si la liste\n        ne contient pas de nombres\n\n        Attention:
+            la moyenne doit être un nombre entier !\n        \"\"\"\n\n\n\n\n"
+        language: python
+        default: '# A implémenter'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

@@ -1,0 +1,57 @@
+accessible: true
+author: Arthur Louette
+categories: []
+contact_url: ''
+context: Exercice d'analyse de valeurs dans une liste.
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        time: '30'
+        hard_time: ''
+        memory: '100'
+    run_cmd: ''
+environment_type: docker
+evaluate: last
+file: ''
+groups: false
+input_random: '0'
+name: Luggage Fines
+network_grading: false
+problems:
+    Question_1:
+        type: code
+        name: Calculer la valeur de l'amende
+        header: ".. code-block:: python\n\n    L'Aéroport de Zaventem ✈️vous engage
+            afin de créer un programme permettant de savoir si les\n    bagages de
+            ses voyageurs dépassent la limite de poids indiquée et si oui, quel sera
+            le prix de\n    l'amende à payer pour les voyageurs.\n\n    Implémentez
+            la fonction **case_control(l)** qui prend en paramètre une liste de valeurs
+            qui correspond\n    au poids de la valise d'une personne.\n    Une liste
+            entière représente l'ensemble du poids des bagages d'un groupe de voyageurs
+            \U0001F9F3.\n\n    1. Le poids total d'un groupe de voyageurs ne doit
+            pas dépasser le nombre qui est égal à la\n    formule suivante : 6x +
+            3 où x est le nombre de voyageurs. Si cela dépasse, le groupe de\n    voyageurs
+            est tenu de payer la différence en euros.\n\n    2. Le poids d'un bagage
+            unique ne peut dépasser 8kg. La règle stipule que pour chaque kilo\n    supplémentaire,
+            le groupe d'individus payent 5 euros supplémentaires. Jusqu'à ce que le
+            poids de\n    la valise vaut le double ou plus du double du poids autorisé,
+            alors l'amende est simplement de\n    100 euros.\n\n    3. Veuillez retournez
+            le montant total de l'amende que doivent régler les groupe de voyageurs
+            en\n    fonction du poids de leurs bagages entrés en paramètres.\n\n    *Exemple*
+            : \U0001D624\U0001D622\U0001D634\U0001D626_\U0001D624\U0001D630\U0001D62F\U0001D635\U0001D633\U0001D630\U0001D62D([9,7,8])
+            doit retourner 8 puisque la somme totale des poids des bagages\n    fait
+            24 (alors que la limite autorisée est de 6*3+3 = 21) donc 3 en excès,
+            et 9 dépasse la\n    limite individuelle de 8kg, donc 5*1 = 5 et 5 + 3
+            = 8 \U0001F6EB\n\n.. code-block:: python\n\n    def case_control(l):\n
+            \   \"\"\"\n    @pre: 'l' est une liste comprenant uniquement des nombres\n\n
+            \   @post : retourne un nombre plus grand ou égal à 0, qui correspond
+            à la somme de l'amende à payer\n            d'un groupe de voyageurs.\n
+            \   \"\"\""
+        language: python
+        default: |4+
+
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

@@ -1,0 +1,46 @@
+name: 22_P1_Vincent_9
+accessible: true
+admins:
+- detry
+- admin_linfo1002
+- arthurlouette
+- Noah_Cordier
+- ardeneyer
+- DAlexandru
+description: ''
+tutors: []
+groups_student_choice: false
+allow_unregister: true
+allow_preview: false
+registration: true
+registration_password: null
+registration_ac: null
+registration_ac_list:
+- '      '
+is_lti: false
+lti_url: ''
+lti_keys: {}
+lti_send_back_grade: false
+task_dispenser: toc
+dispenser_data:
+-   config:
+        closed: false
+    id: tasks-list
+    rank: 0
+    tasks_list:
+        Arthurdn_task_2: 3
+        alexandru_task_1: 2
+        arthur_task_id: 1
+        noah_task_1: 0
+    title: Liste des exercices
+toc:
+-   id: tasks-list
+    rank: 0
+    tasks_list:
+        Alexandru_carre_ou_rectangle: 4
+        Arthurdn_task_1: 3
+        Arthurdn_task_2: 5
+        alexandru_task_1: 2
+        arthur_task_id: 1
+        noah_task_1: 0
+    title: Liste des exercices

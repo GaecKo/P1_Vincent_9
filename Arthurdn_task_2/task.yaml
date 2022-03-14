@@ -1,0 +1,67 @@
+accessible: true
+author: Arthur De Neyer
+categories: []
+contact_url: mailto:arthur.deneyer@student.uclouvain.be
+context: Fonction de comparaison d'un mot et d'une chaine de caractères
+environment_id: pyjavacpp
+environment_parameters:
+    limits:
+        time: '30'
+        hard_time: ''
+        memory: '100'
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Lost Grandmother's contacts
+network_grading: false
+problems:
+    First_Q:
+        type: code
+        name: Lost Grandmother's contacts
+        header: |
+            Votre grand mère (ayant quelques lacunes en informatique), a malencontreusement mélangé toutes ses notes de contacts sur son ordinateur. Heureusement, son/sa petit-e chéri-e (vous) est là pour la sauver de cet événement en comparant ses contacts avec les vôtres!
+
+            Ecrivez le **corps** de la fonction **word_in_string(word, string)**, fonction comparant **word** et **string** donnés en paramètres.
+
+            * La fonction retourne **False** si le *word* **n'est pas** dans le *string*.
+
+            * La fonction retourne une liste: **[index_debut_mot, index_erreur_mot]** si le *word* **est dans** le *string*.
+
+                * *index_erreur_mot* représente le fait que la fonction devrait accepter **1 différence** entre le *word* se trouvant dans le *string*. Cet index représente la lettre différente dans le *string*.  Dès lors, 'tsst' est compris dans 'montest', et la fonction devrait renvoyer [3, 4]. La première lettre du mot doit cependant toujours correspondre dans le string.
+                * *index_debut_mot* est l'index de la **première lettre** du mot dans le *string* et *index_erreur_mot* est l'index de la **lettre** du *string* qui diffère de *word* (-1 si le il n'y a pas d'erreur).
+
+            ⚠ : word <= string, signifiant que word peut être égal à string. Faites bien attention à chaque cas possible. Si le mot a plusieurs occurences dans le string, la fonction renvoit sa première apparition. La fonction ne devrait pas prendre en compte les différences entre majuscules et minusucles, dès lors "test" et "TEST" sont considérés identiques.
+
+            **Exemples:**
+
+            ◈ "Jean-Paul" et "hhauJean-Paulzss" renvoit **[4, -1]**. 0 car 'J' de tapis apparait à l'index 0 du string, -1 car il n'y a pas de différences de lettre.
+
+            ◈ "Bernadette" et "xoxBernxdettexooz" renvoit **[3, 7]**. 3 car 'B' de Bernadette apparait à l'index 3 du string, 7 car le 'a' de Bernadette n'est pas égal au 'x' dans xoxBernxdettexooz, 7 est l'index de la lettre différente dans le string (ici, 'x').
+
+            ◈ "test" et "zonedetsst" renvoit **[6, 7]**. 6 car le 't' de test apparait à l'index 6 du string, 7 car le 'e' de test n'est pas égal au 's' dans zonedetsst, 7 est l'index de la lettre différente dans le string (ici, s)
+
+            ◈ "hello" et "salut" renvoit **False**, "hello" n'étant pas dans "salut".
+
+            ◈ "hello" et "xello" renvoit **False**, l'erreur se trouve à la première lettre, ce qui n'est pas valide.
+
+            .. code-block:: python
+
+                def word_in_string(word, string):
+                """
+                @pre: - word est un mot quelconque de taille >= 3
+                      - string est une suite de caractères de taille >= word
+                @post: - retourne False si le word n'est pas dans le string
+                       - retourne une liste sous la forme [index_debut_mot, index_erreur_mot]
+                            -> index_debut_mot est l'index de la première lettre du mot dans le string
+                            -> index_erreur_mot est l'index de l'emplacement de l'erreur dans le string
+                """
+        language: python
+        default: '# À implémenter !'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
